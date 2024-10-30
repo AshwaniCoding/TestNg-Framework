@@ -19,8 +19,8 @@ This repository provides a streamlined TestNG framework template configured for 
 ## Getting Started
 
 1. **Clone the Repository**:
-      `git clone https://github.com/AshwaniCoding/TestNg-Framework.git
-      cd TestNg Framework`
+      `git clone https://github.com/AshwaniCoding/TestNg-Framework.git`
+      `cd TestNg Framework`
 
 2. **Dependencies**: Ensure necessary dependencies, including `poi-ooxml`, are in your `pom.xml` for Maven management.
 
