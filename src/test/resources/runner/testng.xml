@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM>
+
+<suite name="Test Automation">
+    <test name="veryUserCanLogin">
+        <classes>
+            <class name="" />
+        </classes>
+    </test>
+</suite>
