@@ -3,7 +3,7 @@
 <suite name="Test Automation">
     <test name="veryUserCanLogin">
         <classes>
-            <class name="" />
+            <class name="com.automation.tests.BaseTest" />
         </classes>
     </test>
 </suite>
