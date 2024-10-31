@@ -1,7 +1,9 @@
 package com.automation.listeners;
 
+import com.automation.utils.DriverManager;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.testng.ITestContext;
@@ -30,11 +32,15 @@ public class ExtentReportListener implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         extentTest.log(Status.PASS, "Test Passed");
+        extentTest.log(Status.INFO, "screenshot",
+                MediaEntityBuilder.createScreenCaptureFromBase64String(DriverManager.getScreenshotAsBase64()).build());
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         extentTest.log(Status.FAIL, "Test Failed");
+        extentTest.log(Status.INFO, "screenshot",
+                MediaEntityBuilder.createScreenCaptureFromBase64String(DriverManager.getScreenshotAsBase64()).build());
     }
 
     @Override
